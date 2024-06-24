@@ -27,7 +27,7 @@ export async function generateMetadata({
 
 export default function BasicLayout({children, params: {locale}}: Readonly<Props>) {
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <head>
       </head>
       <body className={inter.className}>

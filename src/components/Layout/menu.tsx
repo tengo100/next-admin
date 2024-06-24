@@ -10,7 +10,8 @@ import {
     BuildOutlined,
     OpenAIOutlined,
     PartitionOutlined,
-    FileExcelOutlined
+    FileExcelOutlined,
+    WindowsOutlined
 } from '@ant-design/icons';
 import React from 'react';
 
@@ -77,6 +78,11 @@ const getNavList = (t: any) => {
             key: '/resource',
             icon: <WalletOutlined />,
             label: t('resource')
+        },
+        {
+            key: '/demo',
+            icon: <WindowsOutlined />,
+            label: '测试 antd 组件'
         },
         
     ]

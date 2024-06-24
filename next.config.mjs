@@ -26,6 +26,8 @@ const nextConfig = {
       "JWT_SECRET": "next-admin",
       "BASE_API_URL": "/api"
     },
+    // 是否开启 react 严格模式，开发模式默认开启，开启后，Mount -> Unmount -> Mount: 组件会在初次挂载（mount）后立即卸载（unmount），然后再次挂载，接口会调用 2 次
+    reactStrictMode:false,
     async headers() {
         // 跨域配置
         return [
